@@ -13,7 +13,7 @@ public class MailService<T> implements Consumer<MailMessage> {
     public void accept(MailMessage t) {
         if (mailBox.containsKey(t.getTo)) {
             List<T> statement = mailBox.get((t.getTo));
-            mailBox.put(t.getTo, t.getContent);
+            mailBox.put(t.getTo, statement);
         }
 
     }
