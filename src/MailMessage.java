@@ -1,4 +1,4 @@
-public class MailMessage {
+public class MailMessage implements MessageDesign<String> {
     private String fromAddress;
     private String toAddress;
     private String content;

@@ -5,8 +5,8 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        String randomFrom = "..."; //Любая случайная строка.
-        String randomTo = "...";  //Любая случайная строка.
+        String randomFrom = "Albina"; //Любая случайная строка.
+        String randomTo = "Vasya";  //Любая случайная строка.
         int randomSalary = 100; //Любое случайное число.
 
         MailMessage firstMessage = new MailMessage(
