@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.function.Consumer;
 
 public class MailService<T> implements Consumer<MessageDesign<T>> {
-    public static class OverridedHashMap<Key, Value> extends HashMap<Key, Value> {
+    public static class OverriddenHashMap<Key, Value> extends HashMap<Key, Value> {
         @Override
         public Value get(Object key) {
             Value statement;
@@ -24,7 +24,7 @@ public class MailService<T> implements Consumer<MessageDesign<T>> {
     private final Map<String, List<T>> mailBox;
 
     public MailService() {
-        mailBox = new OverridedHashMap<>();
+        mailBox = new OverriddenHashMap<>();
     }
 
 
